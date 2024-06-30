@@ -528,6 +528,19 @@ Part of [lazyvim.plugins.extras.editor.outline](/extras/editor/outline)
 | --- | --- | --- |
 | <code>&lt;leader&gt;cs</code> | Toggle Outline | **n** |
 
+## [overseer.nvim](https://github.com/stevearc/overseer.nvim.git)
+Part of [lazyvim.plugins.extras.editor.overseer](/extras/editor/overseer)
+
+| Key | Description | Mode |
+| --- | --- | --- |
+| <code>&lt;leader&gt;ob</code> | Task builder | **n** |
+| <code>&lt;leader&gt;oc</code> | Clear cache | **n** |
+| <code>&lt;leader&gt;oi</code> | Overseer Info | **n** |
+| <code>&lt;leader&gt;oo</code> | Run task | **n** |
+| <code>&lt;leader&gt;oq</code> | Action recent task | **n** |
+| <code>&lt;leader&gt;ot</code> | Task action | **n** |
+| <code>&lt;leader&gt;ow</code> | Task list | **n** |
+
 ## [refactoring.nvim](https://github.com/ThePrimeagen/refactoring.nvim.git)
 Part of [lazyvim.plugins.extras.editor.refactoring](/extras/editor/refactoring)
 
@@ -670,6 +683,13 @@ Part of [lazyvim.plugins.extras.ui.treesitter-context](/extras/ui/treesitter-con
 | Key | Description | Mode |
 | --- | --- | --- |
 | <code>&lt;leader&gt;ut</code> | Toggle Treesitter Context | **n** |
+
+## [chezmoi.nvim](https://github.com/xvzc/chezmoi.nvim.git)
+Part of [lazyvim.plugins.extras.util.chezmoi](/extras/util/chezmoi)
+
+| Key | Description | Mode |
+| --- | --- | --- |
+| <code>&lt;leader&gt;sz</code> | Chezmoi | **n** |
 
 ## [mason.nvim](https://github.com/williamboman/mason.nvim.git)
 Part of [lazyvim.plugins.extras.util.gitui](/extras/util/gitui)
