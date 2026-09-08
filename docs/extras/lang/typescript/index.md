@@ -16,9 +16,9 @@ Additional options for this extra can be configured in your [lua/config/options.
 ---@type "vtsls" | "tsgo"
 vim.g.lazyvim_ts_lsp = "vtsls" -- currently the default
 
--- To use the newer, much faster `tsgo` LSP server, either:
--- * enable the `tsgo` extra, or
--- * set `vim.g.lazyvim_ts_lsp = "tsgo"` in your `options.lua`
+-- To use the newer, much faster `tsc` LSP server, either:
+-- * enable the `tsc` extra, or
+-- * set `vim.g.lazyvim_ts_lsp = "tsc"` in your `options.lua`
 ```
 
 Below you can find a list of included plugins and their default settings.
@@ -47,7 +47,7 @@ import TabItem from '@theme/TabItem';
 ```lua
 opts = function(_, opts)
   local lsp = extra.name or "vtsls"
-  local servers = { "tsserver", "ts_ls", "vtsls", "tsgo", lsp }
+  local servers = { "tsserver", "ts_ls", "vtsls", "tsc", lsp }
   for _, server in ipairs(servers) do
     opts.servers[server] = opts.servers[server] or {}
     opts.servers[server].enabled = server == lsp
@@ -65,7 +65,7 @@ end
   "neovim/nvim-lspconfig",
   opts = function(_, opts)
     local lsp = extra.name or "vtsls"
-    local servers = { "tsserver", "ts_ls", "vtsls", "tsgo", lsp }
+    local servers = { "tsserver", "ts_ls", "vtsls", "tsc", lsp }
     for _, server in ipairs(servers) do
       opts.servers[server] = opts.servers[server] or {}
       opts.servers[server].enabled = server == lsp

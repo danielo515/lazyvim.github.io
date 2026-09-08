@@ -28,6 +28,7 @@ opts = {
   servers = {
     ---@type lspconfig.settings.oxlint
     oxlint = {
+      -- capabilities = { textDocument = { diagnostic = vim.NIL } },
       root_dir = function(bufnr, on_dir)
         -- prefer the top-level oxlint config if it exists (monorepo support)
         local git = vim.fs.root(bufnr, ".git")
@@ -39,6 +40,7 @@ opts = {
       end,
       settings = {
         fixKind = "all",
+        -- run = "onType",
       },
     },
     --- disable the oxfmt lsp server since we use conform for formatting
@@ -59,6 +61,7 @@ opts = {
     servers = {
       ---@type lspconfig.settings.oxlint
       oxlint = {
+        -- capabilities = { textDocument = { diagnostic = vim.NIL } },
         root_dir = function(bufnr, on_dir)
           -- prefer the top-level oxlint config if it exists (monorepo support)
           local git = vim.fs.root(bufnr, ".git")
@@ -70,6 +73,7 @@ opts = {
         end,
         settings = {
           fixKind = "all",
+          -- run = "onType",
         },
       },
       --- disable the oxfmt lsp server since we use conform for formatting
